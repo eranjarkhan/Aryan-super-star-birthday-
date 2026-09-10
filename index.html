@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MD. Anjar Khan — Electrical Engineer with 7+ years of experience in Saudi Arabia.">
+<meta name="theme-color" content="#07111f">
+<title>MD. Anjar Khan | Electrical Engineer</title>
+<style>
+:root{
+  --bg:#07111f;--bg2:#0b1728;--card:#101f33;--line:#20344d;
+  --text:#eef5ff;--muted:#9fb0c5;--accent:#29b6f6;--accent2:#6ee7ff;
+  --white:#fff;--shadow:0 18px 50px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#091827 45%,var(--bg));color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(7,17,31,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;letter-spacing:.5px}.logo span{color:var(--accent)}
+nav{display:flex;gap:24px}nav a{font-size:14px;color:var(--muted);font-weight:700}nav a:hover{color:var(--accent)}
+.menu{display:none;background:none;border:1px solid var(--line);color:var(--white);padding:8px 11px;border-radius:10px;font-size:20px}
+section{padding:95px 0;scroll-margin-top:72px}
+.hero{min-height:100vh;display:grid;place-items:center;padding-top:120px}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:center}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:8px 13px;border:1px solid rgba(41,182,246,.35);background:rgba(41,182,246,.08);border-radius:999px;color:var(--accent2);font-weight:800;font-size:13px}
+h1{font-size:clamp(44px,7vw,78px);line-height:1.02;margin:20px 0 10px;letter-spacing:-2px}
+.hero h2{font-size:clamp(20px,3vw,30px);color:var(--accent);margin-bottom:18px}
+.hero p{font-size:18px;color:var(--muted);max-width:720px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:12px;font-weight:800;border:1px solid var(--line);transition:.2s}
+.btn.primary{background:var(--accent);color:#03111d;border-color:var(--accent)}
+.btn:hover{transform:translateY(-2px)}
+.profile-card{background:linear-gradient(145deg,#10253c,#0b1728);border:1px solid var(--line);border-radius:26px;padding:30px;box-shadow:var(--shadow);text-align:center}
+.avatar{width:150px;height:150px;border-radius:50%;margin:0 auto 20px;display:grid;place-items:center;background:linear-gradient(145deg,#163b5b,#0d2137);border:2px solid rgba(41,182,246,.5);font-size:58px}
+.profile-card h3{font-size:22px}.profile-card p{font-size:14px;margin-top:5px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:35px}
+.stat,.card{background:rgba(16,31,51,.8);border:1px solid var(--line);border-radius:18px;padding:24px}
+.stat strong{display:block;font-size:30px;color:var(--accent)}.stat span{font-size:13px;color:var(--muted)}
+.section-head{margin-bottom:35px}.eyebrow{color:var(--accent);font-size:13px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+h2.section-title{font-size:clamp(30px,5vw,44px);margin-top:7px}
+.section-head p{color:var(--muted);max-width:760px;margin-top:8px}
+.about-grid,.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card h3{font-size:21px;margin-bottom:10px}.card p{color:var(--muted)}
+.highlights{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.highlight{padding:15px;border:1px solid var(--line);border-radius:13px;background:#0b1829;font-weight:700}
+.timeline{position:relative;display:grid;gap:18px}
+.timeline:before{content:"";position:absolute;left:14px;top:5px;bottom:5px;width:2px;background:var(--line)}
+.job{position:relative;padding-left:48px}.dot{position:absolute;left:7px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(41,182,246,.12)}
+.job .card{padding:23px}.job h3{margin:0}.company{color:var(--accent);font-weight:800}.date{color:var(--muted);font-size:14px;margin:3px 0 10px}.job ul{padding-left:20px;color:var(--muted)}.job li{margin:5px 0}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.skill{padding:17px 18px;border:1px solid var(--line);border-radius:14px;background:#0c1a2c;font-weight:750}
+.skill span{color:var(--accent);margin-right:8px}
+.project{display:grid;grid-template-columns:1fr 2fr;gap:25px;align-items:start}.project .big{font-size:28px;font-weight:900;color:var(--accent)}
+.project ul{padding-left:20px;color:var(--muted)}.project li{margin:8px 0}
+.certs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.cert{border:1px solid var(--line);border-radius:14px;padding:18px;background:#0c1a2c}
+.cert b{display:block}.cert span{font-size:13px;color:var(--muted)}
+.contact-box{display:grid;gap:13px}.contact-item{display:flex;gap:14px;align-items:center;padding:16px;border:1px solid var(--line);border-radius:14px;background:#0c1a2c}
+.contact-item .icon{font-size:20px;color:var(--accent)}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);text-align:center;font-size:13px}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:800px){
+ nav{display:none;position:absolute;top:72px;left:0;right:0;background:#07111f;padding:18px 4%;flex-direction:column;gap:15px;border-bottom:1px solid var(--line)}
+ nav.open{display:flex}.menu{display:block}
+ .hero-grid,.about-grid,.contact-grid,.project{grid-template-columns:1fr}
+ .hero{padding-top:120px}.profile-card{max-width:420px;margin:auto}
+ .stats{grid-template-columns:repeat(2,1fr)}.skills{grid-template-columns:1fr 1fr}.certs{grid-template-columns:1fr}
+}
+@media(max-width:480px){.stats,.skills,.highlights{grid-template-columns:1fr}section{padding:75px 0}h1{font-size:45px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">⚡ MD. ANJAR <span>KHAN</span></a>
+    <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    <nav id="nav">
+      <a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#experience">EXPERIENCE</a>
+      <a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a><a href="#certifications">CERTIFICATIONS</a><a href="#contact">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+  <div class="reveal">
+    <div class="badge">⚡ 7+ YEARS OF EXPERIENCE · SAUDI ARABIA</div>
+    <h1>MD. ANJAR KHAN</h1>
+    <h2>ELECTRICAL ENGINEER</h2>
+    <p>Dedicated Electrical Engineer experienced in supervising, installing, testing and commissioning electrical systems across construction and infrastructure projects in Saudi Arabia.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#contact">Contact Me →</a>
+      <a class="btn" href="mailto:eranjarkhan@gmail.com">Email Me</a>
+    </div>
+  </div>
+  <div class="profile-card reveal">
+    <div class="avatar">⚡</div>
+    <h3>Electrical Engineering</h3>
+    <p>LV/MV · Power Distribution · Testing & Commissioning</p>
+    <div class="buttons" style="justify-content:center">
+      <a class="btn primary" href="tel:+966557563767">📞 Call</a>
+      <a class="btn" href="mailto:eranjarkhan@gmail.com">✉ Email</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+  <div class="section-head reveal"><div class="eyebrow">Profile</div><h2 class="section-title">About Me</h2><p>Hands-on electrical engineering experience with a strong focus on safety, quality, coordination and on-time project delivery.</p></div>
+  <div class="about-grid">
+    <div class="card reveal"><h3>Professional Summary</h3><p>I am an Electrical Engineer with over 7 years of experience in Saudi Arabia. I have worked across construction and infrastructure projects, leading site teams and coordinating electrical works with engineers, clients and other disciplines.</p><div class="highlights"><div class="highlight">🎓 Diploma in Electrical Engineering</div><div class="highlight">🦺 Safety-Oriented Professional</div><div class="highlight">👷 50+ Technicians Supervised</div><div class="highlight">✓ Quality & On-Time Delivery</div></div></div>
+    <div class="card reveal"><h3>Professional Strengths</h3><p>Strong leadership, site supervision, electrical installation, testing, troubleshooting, reporting and team coordination.</p><div class="highlights"><div class="highlight">Leadership & Team Management</div><div class="highlight">Problem Solving</div><div class="highlight">Site Coordination</div><div class="highlight">Safety & Quality Control</div></div></div>
+  </div>
+  <div class="stats">
+    <div class="stat reveal"><strong>7+</strong><span>Years Experience</span></div><div class="stat reveal"><strong>50+</strong><span>Technicians Supervised</span></div><div class="stat reveal"><strong>3</strong><span>Companies Worked</span></div><div class="stat reveal"><strong>0</strong><span>Safety Incidents — NEOM Project</span></div>
+  </div>
+</div>
+</section>
+
+<section id="experience">
+<div class="container">
+ <div class="section-head reveal"><div class="eyebrow">Career</div><h2 class="section-title">Professional Experience</h2></div>
+ <div class="timeline">
+  <div class="job reveal"><div class="dot"></div><div class="card"><h3>Electrical Engineer</h3><div class="company">Nesma & Partners</div><div class="date">2022 – Present · Saudi Arabia</div><ul><li>Currently working on various projects including the NEOM Project.</li><li>Supervising 50+ technicians and coordinating site activities.</li><li>Ensuring safe execution, quality and timely completion of electrical works.</li></ul></div></div>
+  <div class="job reveal"><div class="dot"></div><div class="card"><h3>Electrical Engineer</h3><div class="company">Al Arrab Contracting Co.</div><div class="date">2019 – 2022 · Saudi Arabia</div><ul><li>Managed LV/MV installation and maintenance activities.</li><li>Coordinated with engineers, clients and site teams.</li><li>Ensured quality standards and timely completion.</li></ul></div></div>
+  <div class="job reveal"><div class="dot"></div><div class="card"><h3>Electrical Supervisor</h3><div class="company">Techno Electromech Co.</div><div class="date">2017 – 2019</div><ul><li>Supervised electrical installation and testing activities.</li><li>Handled site activities, reporting and team coordination.</li><li>Ensured compliance with safety standards.</li></ul></div></div>
+ </div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+ <div class="section-head reveal"><div class="eyebrow">Expertise</div><h2 class="section-title">Core Skills</h2></div>
+ <div class="skills">
+  <div class="skill reveal"><span>⚡</span>LV & MV Systems</div><div class="skill reveal"><span>▣</span>Transformers</div><div class="skill reveal"><span>⚙</span>Generators</div>
+  <div class="skill reveal"><span>▤</span>Switchgear & Panels</div><div class="skill reveal"><span>🔥</span>Fire Alarm Systems</div><div class="skill reveal"><span>◈</span>BMS — Building Management System</div>
+  <div class="skill reveal"><span>⌁</span>Cable Tray & Conduit</div><div class="skill reveal"><span>⏚</span>Earthing & Lightning Protection</div><div class="skill reveal"><span>⌗</span>Drawings & Schematics</div>
+  <div class="skill reveal"><span>🔧</span>Troubleshooting & Maintenance</div><div class="skill reveal"><span>👥</span>Team Leadership</div><div class="skill reveal"><span>▱</span>Microsoft Office</div>
+ </div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+ <div class="section-head reveal"><div class="eyebrow">Selected Work</div><h2 class="section-title">Projects</h2></div>
+ <div class="card project reveal">
+   <div><div class="eyebrow">Featured Project</div><div class="big">NEOM PROJECT</div><p style="color:var(--muted)">Saudi Arabia · Nesma & Partners</p></div>
+   <div><ul><li>Worked as Electrical Engineer on the NEOM project.</li><li>Supervised 50+ technicians and coordinated electrical site activities.</li><li>Involved in LV systems, cable routing, lighting, power distribution, earthing and equipment connections.</li><li>Completed project activities with <b style="color:var(--accent)">zero safety incidents</b>.</li></ul></div>
+ </div>
+</div>
+</section>
+
+<section id="certifications">
+<div class="container">
+ <div class="section-head reveal"><div class="eyebrow">Qualifications</div><h2 class="section-title">Certifications & Training</h2></div>
+ <div class="certs">
+  <div class="cert reveal"><b>🎓 Diploma in Electrical Engineering</b><span>Electrical engineering qualification</span></div>
+  <div class="cert reveal"><b>🦺 OSHA 30-Hour</b><span>Safety training</span></div>
+  <div class="cert reveal"><b>⛑ First Aid Training</b><span>Emergency response training</span></div>
+  <div class="cert reveal"><b>🔥 Fire Safety Awareness</b><span>Fire safety training</span></div>
+  <div class="cert reveal"><b>📋 Internal Trainings & Certifications</b><span>Additional professional training</span></div>
+ </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+ <div class="section-head reveal"><div class="eyebrow">Get In Touch</div><h2 class="section-title">Let’s Connect</h2><p>For electrical engineering opportunities, professional networking or project-related communication.</p></div>
+ <div class="contact-grid">
+  <div class="card contact-box reveal">
+   <a class="contact-item" href="tel:+966557563767"><span class="icon">📞</span><div><b>Phone</b><div style="color:var(--muted)">+966 557 563 767</div></div></a>
+   <a class="contact-item" href="mailto:eranjarkhan@gmail.com"><span class="icon">✉</span><div><b>Email</b><div style="color:var(--muted)">eranjarkhan@gmail.com</div></div></a>
+   <div class="contact-item"><span class="icon">📍</span><div><b>Location</b><div style="color:var(--muted)">Riyadh, Saudi Arabia</div></div></div>
+  </div>
+  <div class="card reveal"><h3>Professional Profile</h3><p>Open to opportunities where electrical engineering, site supervision, testing & commissioning, safety and team leadership can create measurable project value.</p><div class="buttons"><a class="btn primary" href="mailto:eranjarkhan@gmail.com?subject=Electrical%20Engineer%20Opportunity">Hire / Contact Me</a><a class="btn" href="tel:+966557563767">Call Now</a></div></div>
+ </div>
+</div>
+</section>
+</main>
+
+<footer><div class="container">© <span id="year"></span> MD. ANJAR KHAN · Electrical Engineer · Riyadh, Saudi Arabia</div></footer>
+<script>
+function toggleMenu(){document.getElementById('nav').classList.toggle('open')}
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
