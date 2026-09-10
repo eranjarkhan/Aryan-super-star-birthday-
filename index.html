@@ -3,193 +3,790 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="MD. Anjar Khan — Electrical Engineer with 7+ years of experience in Saudi Arabia.">
-<meta name="theme-color" content="#07111f">
-<title>MD. Anjar Khan | Electrical Engineer</title>
+<title>Happy Birthday, Aryan Khan</title>
 <style>
-:root{
-  --bg:#07111f;--bg2:#0b1728;--card:#101f33;--line:#20344d;
-  --text:#eef5ff;--muted:#9fb0c5;--accent:#29b6f6;--accent2:#6ee7ff;
-  --white:#fff;--shadow:0 18px 50px rgba(0,0,0,.25);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#091827 45%,var(--bg));color:var(--text);line-height:1.6}
-a{color:inherit;text-decoration:none}
-.container{width:min(1120px,92%);margin:auto}
-header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(7,17,31,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
-.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:900;letter-spacing:.5px}.logo span{color:var(--accent)}
-nav{display:flex;gap:24px}nav a{font-size:14px;color:var(--muted);font-weight:700}nav a:hover{color:var(--accent)}
-.menu{display:none;background:none;border:1px solid var(--line);color:var(--white);padding:8px 11px;border-radius:10px;font-size:20px}
-section{padding:95px 0;scroll-margin-top:72px}
-.hero{min-height:100vh;display:grid;place-items:center;padding-top:120px}
-.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:center}
-.badge{display:inline-flex;gap:8px;align-items:center;padding:8px 13px;border:1px solid rgba(41,182,246,.35);background:rgba(41,182,246,.08);border-radius:999px;color:var(--accent2);font-weight:800;font-size:13px}
-h1{font-size:clamp(44px,7vw,78px);line-height:1.02;margin:20px 0 10px;letter-spacing:-2px}
-.hero h2{font-size:clamp(20px,3vw,30px);color:var(--accent);margin-bottom:18px}
-.hero p{font-size:18px;color:var(--muted);max-width:720px}
-.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:12px;font-weight:800;border:1px solid var(--line);transition:.2s}
-.btn.primary{background:var(--accent);color:#03111d;border-color:var(--accent)}
-.btn:hover{transform:translateY(-2px)}
-.profile-card{background:linear-gradient(145deg,#10253c,#0b1728);border:1px solid var(--line);border-radius:26px;padding:30px;box-shadow:var(--shadow);text-align:center}
-.avatar{width:150px;height:150px;border-radius:50%;margin:0 auto 20px;display:grid;place-items:center;background:linear-gradient(145deg,#163b5b,#0d2137);border:2px solid rgba(41,182,246,.5);font-size:58px}
-.profile-card h3{font-size:22px}.profile-card p{font-size:14px;margin-top:5px}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:35px}
-.stat,.card{background:rgba(16,31,51,.8);border:1px solid var(--line);border-radius:18px;padding:24px}
-.stat strong{display:block;font-size:30px;color:var(--accent)}.stat span{font-size:13px;color:var(--muted)}
-.section-head{margin-bottom:35px}.eyebrow{color:var(--accent);font-size:13px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
-h2.section-title{font-size:clamp(30px,5vw,44px);margin-top:7px}
-.section-head p{color:var(--muted);max-width:760px;margin-top:8px}
-.about-grid,.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.card h3{font-size:21px;margin-bottom:10px}.card p{color:var(--muted)}
-.highlights{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
-.highlight{padding:15px;border:1px solid var(--line);border-radius:13px;background:#0b1829;font-weight:700}
-.timeline{position:relative;display:grid;gap:18px}
-.timeline:before{content:"";position:absolute;left:14px;top:5px;bottom:5px;width:2px;background:var(--line)}
-.job{position:relative;padding-left:48px}.dot{position:absolute;left:7px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(41,182,246,.12)}
-.job .card{padding:23px}.job h3{margin:0}.company{color:var(--accent);font-weight:800}.date{color:var(--muted);font-size:14px;margin:3px 0 10px}.job ul{padding-left:20px;color:var(--muted)}.job li{margin:5px 0}
-.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.skill{padding:17px 18px;border:1px solid var(--line);border-radius:14px;background:#0c1a2c;font-weight:750}
-.skill span{color:var(--accent);margin-right:8px}
-.project{display:grid;grid-template-columns:1fr 2fr;gap:25px;align-items:start}.project .big{font-size:28px;font-weight:900;color:var(--accent)}
-.project ul{padding-left:20px;color:var(--muted)}.project li{margin:8px 0}
-.certs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.cert{border:1px solid var(--line);border-radius:14px;padding:18px;background:#0c1a2c}
-.cert b{display:block}.cert span{font-size:13px;color:var(--muted)}
-.contact-box{display:grid;gap:13px}.contact-item{display:flex;gap:14px;align-items:center;padding:16px;border:1px solid var(--line);border-radius:14px;background:#0c1a2c}
-.contact-item .icon{font-size:20px;color:var(--accent)}
-footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);text-align:center;font-size:13px}
-.reveal{opacity:0;transform:translateY(18px);transition:.7s}.reveal.show{opacity:1;transform:none}
-@media(max-width:800px){
- nav{display:none;position:absolute;top:72px;left:0;right:0;background:#07111f;padding:18px 4%;flex-direction:column;gap:15px;border-bottom:1px solid var(--line)}
- nav.open{display:flex}.menu{display:block}
- .hero-grid,.about-grid,.contact-grid,.project{grid-template-columns:1fr}
- .hero{padding-top:120px}.profile-card{max-width:420px;margin:auto}
- .stats{grid-template-columns:repeat(2,1fr)}.skills{grid-template-columns:1fr 1fr}.certs{grid-template-columns:1fr}
-}
-@media(max-width:480px){.stats,.skills,.highlights{grid-template-columns:1fr}section{padding:75px 0}h1{font-size:45px}}
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap');
+
+  :root{
+    --navy:#161A33;
+    --navy-deep:#0E1124;
+    --gold:#E8B54D;
+    --coral:#FF8C7A;
+    --teal:#4FB8A8;
+    --cream:#F6F1E7;
+    --cream-dim:rgba(246,241,231,0.68);
+    --line:rgba(246,241,231,0.14);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    background:var(--navy-deep);
+    color:var(--cream);
+    font-family:'Inter',sans-serif;
+    line-height:1.5;
+  }
+
+  /* ---------- Hero ---------- */
+
+  .hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:80px 24px 60px;
+    position:relative;
+    background:
+      radial-gradient(ellipse 60% 50% at 50% 0%, rgba(232,181,77,0.14), transparent 70%),
+      var(--navy);
+    overflow:hidden;
+    border-bottom:1px solid var(--line);
+  }
+
+  .hero::before, .hero::after{
+    content:'';
+    position:absolute;
+    border-radius:50%;
+    filter:blur(60px);
+    opacity:0.25;
+  }
+  .hero::before{
+    width:320px;height:320px;
+    background:var(--coral);
+    top:-120px; left:-100px;
+  }
+  .hero::after{
+    width:280px;height:280px;
+    background:var(--teal);
+    bottom:-140px; right:-80px;
+  }
+
+  /* Fairy lights */
+  .fairy-lights{
+    position:absolute;
+    top:0; left:0; right:0;
+    height:46px;
+    z-index:1;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:flex-start;
+    padding-top:6px;
+    pointer-events:none;
+  }
+  .fairy-lights .bulb{
+    width:9px;height:9px;
+    border-radius:50%;
+    animation:twinkle 1.8s ease-in-out infinite;
+  }
+  .fairy-lights .bulb:nth-child(odd){background:var(--gold); box-shadow:0 0 10px 2px rgba(232,181,77,0.7);}
+  .fairy-lights .bulb:nth-child(even){background:var(--coral); box-shadow:0 0 10px 2px rgba(255,140,122,0.6);}
+  .fairy-lights .bulb:nth-child(3n){animation-delay:0.4s;}
+  .fairy-lights .bulb:nth-child(4n){animation-delay:0.9s;}
+  @keyframes twinkle{
+    0%,100%{opacity:0.45; transform:scale(0.85);}
+    50%{opacity:1; transform:scale(1.1);}
+  }
+
+  /* Balloons */
+  .balloons{
+    position:absolute;
+    inset:0;
+    z-index:1;
+    pointer-events:none;
+  }
+  .balloon-deco{
+    position:absolute;
+    border-radius:50% 50% 50% 50% / 58% 58% 42% 42%;
+    opacity:0.9;
+    animation:bob 5s ease-in-out infinite;
+  }
+  .balloon-deco::after{
+    content:'';
+    position:absolute;
+    bottom:-38px;
+    left:50%;
+    width:1px;
+    height:38px;
+    background:rgba(246,241,231,0.35);
+  }
+  .bd1{width:46px;height:58px;background:var(--coral);top:14%;left:8%;animation-delay:0s;}
+  .bd2{width:34px;height:44px;background:var(--teal);top:22%;right:10%;animation-delay:1s;}
+  .bd3{width:28px;height:36px;background:var(--gold);top:8%;right:22%;animation-delay:1.8s;}
+  @keyframes bob{
+    0%,100%{transform:translateY(0) rotate(-3deg);}
+    50%{transform:translateY(-14px) rotate(3deg);}
+  }
+
+  .eyebrow{
+    font-size:13px;
+    letter-spacing:2px;
+    color:var(--gold);
+    text-transform:uppercase;
+    margin-bottom:18px;
+    font-weight:600;
+    position:relative;
+    z-index:1;
+  }
+
+  .hero h1{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:clamp(40px,9vw,84px);
+    line-height:1.05;
+    max-width:900px;
+    position:relative;
+    z-index:1;
+  }
+
+  .hero h1 em{
+    font-style:italic;
+    color:var(--gold);
+    font-weight:600;
+  }
+
+  .hero .sub{
+    margin-top:20px;
+    font-size:17px;
+    color:var(--cream-dim);
+    max-width:480px;
+    position:relative;
+    z-index:1;
+  }
+
+  /* Countdown */
+  .countdown{
+    margin-top:52px;
+    display:flex;
+    gap:28px;
+    position:relative;
+    z-index:1;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  .countdown .unit{
+    min-width:82px;
+  }
+  .countdown .num{
+    font-family:'Fraunces',serif;
+    font-size:clamp(30px,6vw,46px);
+    font-weight:600;
+    color:var(--cream);
+    font-variant-numeric:tabular-nums;
+  }
+  .countdown .label{
+    margin-top:6px;
+    font-size:11px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:var(--cream-dim);
+  }
+  .countdown .divider{
+    font-family:'Fraunces',serif;
+    font-size:30px;
+    color:var(--line);
+    align-self:center;
+  }
+
+  .celebrating-today{
+    margin-top:52px;
+    font-family:'Fraunces',serif;
+    font-size:clamp(24px,5vw,32px);
+    color:var(--gold);
+    position:relative;
+    z-index:1;
+  }
+
+  .scroll-hint{
+    position:absolute;
+    bottom:28px;
+    font-size:11px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--cream-dim);
+    z-index:1;
+  }
+
+  /* Song button */
+  .song-btn{
+    margin-top:36px;
+    position:relative;
+    z-index:1;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:transparent;
+    border:1.5px solid var(--gold);
+    color:var(--gold);
+    border-radius:999px;
+    padding:12px 26px;
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:13.5px;
+    letter-spacing:0.5px;
+    cursor:pointer;
+    transition:background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+  }
+  .song-btn:hover{
+    background:var(--gold);
+    color:var(--navy-deep);
+    transform:translateY(-1px);
+  }
+  .song-btn svg{
+    width:16px;height:16px;
+    flex-shrink:0;
+  }
+  .song-btn.playing{
+    background:var(--gold);
+    color:var(--navy-deep);
+  }
+  .song-bars{
+    display:inline-flex;
+    align-items:flex-end;
+    gap:2px;
+    height:14px;
+  }
+  .song-bars span{
+    width:2.5px;
+    background:currentColor;
+    border-radius:2px;
+    animation:songbar 0.9s ease-in-out infinite;
+    height:4px;
+  }
+  .song-btn:not(.playing) .song-bars span{
+    animation-play-state:paused;
+  }
+  .song-bars span:nth-child(1){animation-delay:0s;}
+  .song-bars span:nth-child(2){animation-delay:0.2s;}
+  .song-bars span:nth-child(3){animation-delay:0.4s;}
+  @keyframes songbar{
+    0%,100%{height:4px;}
+    50%{height:14px;}
+  }
+
+  /* ---------- Section shared ---------- */
+
+  section.block{
+    padding:100px 24px;
+    max-width:720px;
+    margin:0 auto;
+  }
+
+  .section-eyebrow{
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--teal);
+    font-weight:600;
+    margin-bottom:14px;
+    text-align:center;
+  }
+
+  .section-title{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:clamp(28px,5vw,40px);
+    text-align:center;
+    margin-bottom:36px;
+  }
+
+  /* ---------- Wishes ---------- */
+
+  .wish-card{
+    background:linear-gradient(160deg, rgba(232,181,77,0.08), rgba(255,255,255,0.02));
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:44px 36px;
+    text-align:center;
+  }
+
+  .wish-card p{
+    font-family:'Fraunces',serif;
+    font-size:clamp(19px,3.4vw,24px);
+    line-height:1.55;
+    color:var(--cream);
+  }
+
+  .wish-card .signature{
+    margin-top:24px;
+    font-family:'Inter',sans-serif;
+    font-size:13px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:var(--cream-dim);
+  }
+
+  /* ---------- Cake illustration ---------- */
+
+  .cake-wrap{
+    display:flex;
+    justify-content:center;
+    margin-bottom:8px;
+  }
+
+  .flame{
+    animation:flicker 1.4s ease-in-out infinite;
+    transform-origin:center bottom;
+  }
+  .flame:nth-child(odd){animation-delay:0.3s;}
+  @keyframes flicker{
+    0%,100%{transform:scaleY(1) scaleX(1); opacity:1;}
+    45%{transform:scaleY(1.15) scaleX(0.92); opacity:0.9;}
+    70%{transform:scaleY(0.9) scaleX(1.05); opacity:1;}
+  }
+
+  /* ---------- Photo placeholder ---------- */
+
+  .photo-frame{
+    width:220px;
+    height:220px;
+    margin:0 auto 20px;
+    border:2px dashed var(--line);
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    color:var(--cream-dim);
+    background:rgba(255,255,255,0.02);
+  }
+  .photo-frame svg{
+    opacity:0.5;
+  }
+  .photo-frame span{
+    font-size:12.5px;
+    letter-spacing:0.5px;
+  }
+
+  /* ---------- Timeline / highlights ---------- */
+
+  .highlights{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+  }
+  @media(max-width:560px){
+    .highlights{grid-template-columns:1fr;}
+  }
+  .highlight{
+    border-left:2px solid var(--gold);
+    padding:6px 0 6px 18px;
+    text-align:left;
+  }
+  .highlight .num{
+    font-family:'Fraunces',serif;
+    font-size:30px;
+    color:var(--gold);
+  }
+  .highlight .txt{
+    font-size:13px;
+    color:var(--cream-dim);
+    margin-top:4px;
+  }
+
+  /* ---------- Guestbook ---------- */
+
+  .guestbook-form{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    margin-bottom:44px;
+  }
+
+  .guestbook-form input,
+  .guestbook-form textarea{
+    background:rgba(255,255,255,0.04);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:14px 16px;
+    color:var(--cream);
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    outline:none;
+    transition:border-color 0.2s;
+    resize:vertical;
+  }
+  .guestbook-form input:focus,
+  .guestbook-form textarea:focus{
+    border-color:var(--gold);
+  }
+  .guestbook-form input::placeholder,
+  .guestbook-form textarea::placeholder{
+    color:rgba(246,241,231,0.35);
+  }
+
+  .guestbook-form button{
+    align-self:center;
+    background:var(--gold);
+    color:var(--navy-deep);
+    border:none;
+    border-radius:999px;
+    padding:13px 32px;
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:14px;
+    cursor:pointer;
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .guestbook-form button:hover{
+    transform:translateY(-1px);
+    box-shadow:0 8px 20px rgba(232,181,77,0.3);
+  }
+  .guestbook-form button:disabled{
+    opacity:0.5;
+    cursor:default;
+    transform:none;
+    box-shadow:none;
+  }
+
+  .guestbook-status{
+    text-align:center;
+    font-size:13px;
+    color:var(--cream-dim);
+    min-height:18px;
+    margin-top:-28px;
+    margin-bottom:28px;
+  }
+
+  .messages{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+
+  .msg{
+    background:rgba(255,255,255,0.03);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:18px 20px;
+  }
+  .msg .msg-name{
+    font-weight:600;
+    font-size:14px;
+    color:var(--gold);
+    margin-bottom:6px;
+  }
+  .msg .msg-text{
+    font-size:14.5px;
+    color:var(--cream-dim);
+    line-height:1.55;
+  }
+
+  .empty-note{
+    text-align:center;
+    font-size:14px;
+    color:var(--cream-dim);
+    font-style:italic;
+    padding:20px 0;
+  }
+
+  /* ---------- Footer ---------- */
+
+  footer{
+    text-align:center;
+    padding:48px 24px 60px;
+    border-top:1px solid var(--line);
+  }
+  footer .heart{
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-size:18px;
+    color:var(--gold);
+  }
+  footer .fine{
+    margin-top:10px;
+    font-size:12px;
+    color:var(--cream-dim);
+  }
 </style>
 </head>
 <body>
-<header>
-  <div class="container nav">
-    <a class="logo" href="#home">⚡ MD. ANJAR <span>KHAN</span></a>
-    <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
-    <nav id="nav">
-      <a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#experience">EXPERIENCE</a>
-      <a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a><a href="#certifications">CERTIFICATIONS</a><a href="#contact">CONTACT</a>
-    </nav>
-  </div>
-</header>
 
-<main>
-<section class="hero" id="home">
-<div class="container hero-grid">
-  <div class="reveal">
-    <div class="badge">⚡ 7+ YEARS OF EXPERIENCE · SAUDI ARABIA</div>
-    <h1>MD. ANJAR KHAN</h1>
-    <h2>ELECTRICAL ENGINEER</h2>
-    <p>Dedicated Electrical Engineer experienced in supervising, installing, testing and commissioning electrical systems across construction and infrastructure projects in Saudi Arabia.</p>
-    <div class="buttons">
-      <a class="btn primary" href="#contact">Contact Me →</a>
-      <a class="btn" href="mailto:eranjarkhan@gmail.com">Email Me</a>
+<section class="hero">
+  <div class="fairy-lights">
+    <div class="bulb"></div><div class="bulb"></div><div class="bulb"></div><div class="bulb"></div>
+    <div class="bulb"></div><div class="bulb"></div><div class="bulb"></div><div class="bulb"></div>
+    <div class="bulb"></div><div class="bulb"></div><div class="bulb"></div><div class="bulb"></div>
+  </div>
+  <div class="balloons">
+    <div class="balloon-deco bd1"></div>
+    <div class="balloon-deco bd2"></div>
+    <div class="balloon-deco bd3"></div>
+  </div>
+  <div class="eyebrow">September 11</div>
+  <h1>Happy Birthday,<br><em>Aryan Khan</em></h1>
+  <p class="sub">A day made just for celebrating the wonder that is you.</p>
+
+  <div id="countdownWrap"></div>
+
+  <button class="song-btn" id="songBtn" onclick="toggleSong()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+    <span id="songBtnText">Play Happy Birthday</span>
+    <span class="song-bars"><span></span><span></span><span></span></span>
+  </button>
+
+  <div class="scroll-hint">scroll down ↓</div>
+</section>
+
+<section class="block">
+  <div class="section-eyebrow">A note for you</div>
+  <div class="wish-card">
+    <p>"Wishing you a year ahead as bright as your smile and as bold as your dreams. Keep growing, keep exploring, and keep being wonderfully you, Aryan."</p>
+    <div class="signature">With love, on your special day</div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="section-eyebrow">A picture to remember</div>
+  <div class="photo-frame">
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+      <rect x="3" y="6" width="18" height="14" rx="2"/>
+      <circle cx="12" cy="13" r="3.4"/>
+      <path d="M8 6l1.2-2h5.6L16 6"/>
+    </svg>
+    <span>Add Aryan's photo here</span>
+  </div>
+</section>
+
+<section class="block">
+  <div class="section-eyebrow">Today's the day</div>
+  <div class="cake-wrap">
+    <svg width="180" height="150" viewBox="0 0 180 150" xmlns="http://www.w3.org/2000/svg">
+      <!-- candles -->
+      <g>
+        <rect x="52" y="38" width="5" height="22" rx="2" fill="#F6F1E7" opacity="0.85"/>
+        <rect x="88" y="30" width="5" height="30" rx="2" fill="#F6F1E7" opacity="0.85"/>
+        <rect x="124" y="38" width="5" height="22" rx="2" fill="#F6F1E7" opacity="0.85"/>
+        <path class="flame" d="M54.5 30c3 4 3 7 0 9-3-2-3-5 0-9z" fill="#E8B54D"/>
+        <path class="flame" d="M90.5 20c3.4 4.5 3.4 8 0 10.5-3.4-2.5-3.4-6 0-10.5z" fill="#FF8C7A"/>
+        <path class="flame" d="M126.5 30c3 4 3 7 0 9-3-2-3-5 0-9z" fill="#E8B54D"/>
+      </g>
+      <!-- cake tiers -->
+      <rect x="30" y="60" width="120" height="26" rx="6" fill="#4FB8A8"/>
+      <rect x="40" y="86" width="100" height="30" rx="6" fill="#FF8C7A"/>
+      <rect x="50" y="116" width="80" height="26" rx="6" fill="#E8B54D"/>
+      <!-- icing dots -->
+      <circle cx="45" cy="73" r="3" fill="#F6F1E7" opacity="0.8"/>
+      <circle cx="90" cy="73" r="3" fill="#F6F1E7" opacity="0.8"/>
+      <circle cx="135" cy="73" r="3" fill="#F6F1E7" opacity="0.8"/>
+      <circle cx="65" cy="101" r="3" fill="#F6F1E7" opacity="0.8"/>
+      <circle cx="115" cy="101" r="3" fill="#F6F1E7" opacity="0.8"/>
+    </svg>
+  </div>
+  <div class="highlights">
+    <div class="highlight">
+      <div class="num">01</div>
+      <div class="txt">Cake, candles, and a wish worth making</div>
+    </div>
+    <div class="highlight">
+      <div class="num">02</div>
+      <div class="txt">A year older, a year braver</div>
+    </div>
+    <div class="highlight">
+      <div class="num">03</div>
+      <div class="txt">Celebrated by everyone who loves you</div>
     </div>
   </div>
-  <div class="profile-card reveal">
-    <div class="avatar">⚡</div>
-    <h3>Electrical Engineering</h3>
-    <p>LV/MV · Power Distribution · Testing & Commissioning</p>
-    <div class="buttons" style="justify-content:center">
-      <a class="btn primary" href="tel:+966557563767">📞 Call</a>
-      <a class="btn" href="mailto:eranjarkhan@gmail.com">✉ Email</a>
-    </div>
+</section>
+
+<section class="block" id="guestbook">
+  <div class="section-eyebrow">Guestbook</div>
+  <div class="section-title">Leave a birthday wish</div>
+
+  <form class="guestbook-form" id="wishForm">
+    <input type="text" id="wishName" placeholder="Your name" maxlength="40" required />
+    <textarea id="wishText" placeholder="Write your birthday wish for Aryan..." rows="3" maxlength="300" required></textarea>
+    <button type="submit" id="wishSubmit">Add my wish</button>
+  </form>
+  <div class="guestbook-status" id="wishStatus"></div>
+
+  <div class="messages" id="messagesList">
+    <div class="empty-note">Loading wishes...</div>
   </div>
-</div>
 </section>
 
-<section id="about">
-<div class="container">
-  <div class="section-head reveal"><div class="eyebrow">Profile</div><h2 class="section-title">About Me</h2><p>Hands-on electrical engineering experience with a strong focus on safety, quality, coordination and on-time project delivery.</p></div>
-  <div class="about-grid">
-    <div class="card reveal"><h3>Professional Summary</h3><p>I am an Electrical Engineer with over 7 years of experience in Saudi Arabia. I have worked across construction and infrastructure projects, leading site teams and coordinating electrical works with engineers, clients and other disciplines.</p><div class="highlights"><div class="highlight">🎓 Diploma in Electrical Engineering</div><div class="highlight">🦺 Safety-Oriented Professional</div><div class="highlight">👷 50+ Technicians Supervised</div><div class="highlight">✓ Quality & On-Time Delivery</div></div></div>
-    <div class="card reveal"><h3>Professional Strengths</h3><p>Strong leadership, site supervision, electrical installation, testing, troubleshooting, reporting and team coordination.</p><div class="highlights"><div class="highlight">Leadership & Team Management</div><div class="highlight">Problem Solving</div><div class="highlight">Site Coordination</div><div class="highlight">Safety & Quality Control</div></div></div>
-  </div>
-  <div class="stats">
-    <div class="stat reveal"><strong>7+</strong><span>Years Experience</span></div><div class="stat reveal"><strong>50+</strong><span>Technicians Supervised</span></div><div class="stat reveal"><strong>3</strong><span>Companies Worked</span></div><div class="stat reveal"><strong>0</strong><span>Safety Incidents — NEOM Project</span></div>
-  </div>
-</div>
-</section>
+<footer>
+  <div class="heart">Made with love for Aryan's birthday</div>
+  <div class="fine">Wishes left here are visible to everyone who opens this page</div>
+</footer>
 
-<section id="experience">
-<div class="container">
- <div class="section-head reveal"><div class="eyebrow">Career</div><h2 class="section-title">Professional Experience</h2></div>
- <div class="timeline">
-  <div class="job reveal"><div class="dot"></div><div class="card"><h3>Electrical Engineer</h3><div class="company">Nesma & Partners</div><div class="date">2022 – Present · Saudi Arabia</div><ul><li>Currently working on various projects including the NEOM Project.</li><li>Supervising 50+ technicians and coordinating site activities.</li><li>Ensuring safe execution, quality and timely completion of electrical works.</li></ul></div></div>
-  <div class="job reveal"><div class="dot"></div><div class="card"><h3>Electrical Engineer</h3><div class="company">Al Arrab Contracting Co.</div><div class="date">2019 – 2022 · Saudi Arabia</div><ul><li>Managed LV/MV installation and maintenance activities.</li><li>Coordinated with engineers, clients and site teams.</li><li>Ensured quality standards and timely completion.</li></ul></div></div>
-  <div class="job reveal"><div class="dot"></div><div class="card"><h3>Electrical Supervisor</h3><div class="company">Techno Electromech Co.</div><div class="date">2017 – 2019</div><ul><li>Supervised electrical installation and testing activities.</li><li>Handled site activities, reporting and team coordination.</li><li>Ensured compliance with safety standards.</li></ul></div></div>
- </div>
-</div>
-</section>
-
-<section id="skills">
-<div class="container">
- <div class="section-head reveal"><div class="eyebrow">Expertise</div><h2 class="section-title">Core Skills</h2></div>
- <div class="skills">
-  <div class="skill reveal"><span>⚡</span>LV & MV Systems</div><div class="skill reveal"><span>▣</span>Transformers</div><div class="skill reveal"><span>⚙</span>Generators</div>
-  <div class="skill reveal"><span>▤</span>Switchgear & Panels</div><div class="skill reveal"><span>🔥</span>Fire Alarm Systems</div><div class="skill reveal"><span>◈</span>BMS — Building Management System</div>
-  <div class="skill reveal"><span>⌁</span>Cable Tray & Conduit</div><div class="skill reveal"><span>⏚</span>Earthing & Lightning Protection</div><div class="skill reveal"><span>⌗</span>Drawings & Schematics</div>
-  <div class="skill reveal"><span>🔧</span>Troubleshooting & Maintenance</div><div class="skill reveal"><span>👥</span>Team Leadership</div><div class="skill reveal"><span>▱</span>Microsoft Office</div>
- </div>
-</div>
-</section>
-
-<section id="projects">
-<div class="container">
- <div class="section-head reveal"><div class="eyebrow">Selected Work</div><h2 class="section-title">Projects</h2></div>
- <div class="card project reveal">
-   <div><div class="eyebrow">Featured Project</div><div class="big">NEOM PROJECT</div><p style="color:var(--muted)">Saudi Arabia · Nesma & Partners</p></div>
-   <div><ul><li>Worked as Electrical Engineer on the NEOM project.</li><li>Supervised 50+ technicians and coordinated electrical site activities.</li><li>Involved in LV systems, cable routing, lighting, power distribution, earthing and equipment connections.</li><li>Completed project activities with <b style="color:var(--accent)">zero safety incidents</b>.</li></ul></div>
- </div>
-</div>
-</section>
-
-<section id="certifications">
-<div class="container">
- <div class="section-head reveal"><div class="eyebrow">Qualifications</div><h2 class="section-title">Certifications & Training</h2></div>
- <div class="certs">
-  <div class="cert reveal"><b>🎓 Diploma in Electrical Engineering</b><span>Electrical engineering qualification</span></div>
-  <div class="cert reveal"><b>🦺 OSHA 30-Hour</b><span>Safety training</span></div>
-  <div class="cert reveal"><b>⛑ First Aid Training</b><span>Emergency response training</span></div>
-  <div class="cert reveal"><b>🔥 Fire Safety Awareness</b><span>Fire safety training</span></div>
-  <div class="cert reveal"><b>📋 Internal Trainings & Certifications</b><span>Additional professional training</span></div>
- </div>
-</div>
-</section>
-
-<section id="contact">
-<div class="container">
- <div class="section-head reveal"><div class="eyebrow">Get In Touch</div><h2 class="section-title">Let’s Connect</h2><p>For electrical engineering opportunities, professional networking or project-related communication.</p></div>
- <div class="contact-grid">
-  <div class="card contact-box reveal">
-   <a class="contact-item" href="tel:+966557563767"><span class="icon">📞</span><div><b>Phone</b><div style="color:var(--muted)">+966 557 563 767</div></div></a>
-   <a class="contact-item" href="mailto:eranjarkhan@gmail.com"><span class="icon">✉</span><div><b>Email</b><div style="color:var(--muted)">eranjarkhan@gmail.com</div></div></a>
-   <div class="contact-item"><span class="icon">📍</span><div><b>Location</b><div style="color:var(--muted)">Riyadh, Saudi Arabia</div></div></div>
-  </div>
-  <div class="card reveal"><h3>Professional Profile</h3><p>Open to opportunities where electrical engineering, site supervision, testing & commissioning, safety and team leadership can create measurable project value.</p><div class="buttons"><a class="btn primary" href="mailto:eranjarkhan@gmail.com?subject=Electrical%20Engineer%20Opportunity">Hire / Contact Me</a><a class="btn" href="tel:+966557563767">Call Now</a></div></div>
- </div>
-</div>
-</section>
-</main>
-
-<footer><div class="container">© <span id="year"></span> MD. ANJAR KHAN · Electrical Engineer · Riyadh, Saudi Arabia</div></footer>
 <script>
-function toggleMenu(){document.getElementById('nav').classList.toggle('open')}
-document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
-document.getElementById('year').textContent=new Date().getFullYear();
-const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.08});
-document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  // ---------- Countdown to next Sept 11 ----------
+  function renderCountdown(){
+    const now = new Date();
+    let year = now.getFullYear();
+    let next = new Date(year, 8, 11, 0, 0, 0); // month 8 = September
+    const todayIsBday = now.getMonth() === 8 && now.getDate() === 11;
+
+    if(!todayIsBday && next < now){
+      next = new Date(year+1, 8, 11, 0, 0, 0);
+    }
+
+    const wrap = document.getElementById('countdownWrap');
+
+    if(todayIsBday){
+      wrap.innerHTML = '<div class="celebrating-today">🎉 It\\'s the big day! 🎉</div>';
+      return;
+    }
+
+    const diff = next - now;
+    const days = Math.floor(diff / (1000*60*60*24));
+    const hours = Math.floor((diff / (1000*60*60)) % 24);
+    const mins = Math.floor((diff / (1000*60)) % 60);
+    const secs = Math.floor((diff / 1000) % 60);
+
+    wrap.innerHTML = `
+      <div class="countdown">
+        <div class="unit"><div class="num">${days}</div><div class="label">Days</div></div>
+        <div class="divider">:</div>
+        <div class="unit"><div class="num">${String(hours).padStart(2,'0')}</div><div class="label">Hours</div></div>
+        <div class="divider">:</div>
+        <div class="unit"><div class="num">${String(mins).padStart(2,'0')}</div><div class="label">Minutes</div></div>
+        <div class="divider">:</div>
+        <div class="unit"><div class="num">${String(secs).padStart(2,'0')}</div><div class="label">Seconds</div></div>
+      </div>
+    `;
+  }
+  renderCountdown();
+  setInterval(renderCountdown, 1000);
+
+  // ---------- Happy Birthday song (synthesized melody) ----------
+  const NOTE = { G4:392.00, A4:440.00, B4:493.88, C5:523.25, D5:587.33, E5:659.25, F5:698.46, G5:783.99 };
+  // [note, duration in beats]
+  const MELODY = [
+    ['G4',0.5],['G4',0.5],['A4',1],['G4',1],['C5',1],['B4',2],
+    ['G4',0.5],['G4',0.5],['A4',1],['G4',1],['D5',1],['C5',2],
+    ['G4',0.5],['G4',0.5],['G5',1],['E5',1],['C5',1],['B4',1],['A4',2],
+    ['F5',0.5],['F5',0.5],['E5',1],['C5',1],['D5',1],['C5',2],
+  ];
+
+  let audioCtx = null;
+  let isPlaying = false;
+  let stopTimer = null;
+
+  function toggleSong(){
+    if(isPlaying){ stopSong(); return; }
+    playSong();
+  }
+
+  function stopSong(){
+    isPlaying = false;
+    if(stopTimer) clearTimeout(stopTimer);
+    document.getElementById('songBtn').classList.remove('playing');
+    document.getElementById('songBtnText').textContent = 'Play Happy Birthday';
+  }
+
+  function playSong(){
+    if(!audioCtx){
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    if(audioCtx.state === 'suspended') audioCtx.resume();
+
+    isPlaying = true;
+    document.getElementById('songBtn').classList.add('playing');
+    document.getElementById('songBtnText').textContent = 'Playing...';
+
+    const beat = 0.34; // seconds per beat
+    let t = audioCtx.currentTime + 0.05;
+    let totalDuration = 0;
+
+    MELODY.forEach(([note, beats]) => {
+      const freq = NOTE[note];
+      const dur = beats * beat;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = 'sine';
+      osc.frequency.value = freq;
+      gain.gain.setValueAtTime(0, t);
+      gain.gain.linearRampToValueAtTime(0.28, t + 0.03);
+      gain.gain.setValueAtTime(0.28, t + dur - 0.06);
+      gain.gain.linearRampToValueAtTime(0, t + dur - 0.01);
+      osc.connect(gain).connect(audioCtx.destination);
+      osc.start(t);
+      osc.stop(t + dur);
+      t += dur;
+      totalDuration += dur;
+    });
+
+    stopTimer = setTimeout(stopSong, totalDuration * 1000 + 150);
+  }
+
+  // ---------- Guestbook (shared persistent storage) ----------
+  const messagesList = document.getElementById('messagesList');
+  const form = document.getElementById('wishForm');
+  const nameInput = document.getElementById('wishName');
+  const textInput = document.getElementById('wishText');
+  const statusEl = document.getElementById('wishStatus');
+  const submitBtn = document.getElementById('wishSubmit');
+
+  function escapeHtml(str){
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  function renderMessages(list){
+    if(!list.length){
+      messagesList.innerHTML = '<div class="empty-note">Be the first to leave a wish!</div>';
+      return;
+    }
+    messagesList.innerHTML = list
+      .slice()
+      .reverse()
+      .map(m => `
+        <div class="msg">
+          <div class="msg-name">${escapeHtml(m.name)}</div>
+          <div class="msg-text">${escapeHtml(m.text)}</div>
+        </div>
+      `).join('');
+  }
+
+  async function loadMessages(){
+    try{
+      const result = await window.storage.get('guestbook:aryan-khan-birthday', true);
+      const list = result ? JSON.parse(result.value) : [];
+      renderMessages(list);
+      return list;
+    }catch(e){
+      renderMessages([]);
+      return [];
+    }
+  }
+
+  loadMessages();
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = nameInput.value.trim();
+    const text = textInput.value.trim();
+    if(!name || !text) return;
+
+    submitBtn.disabled = true;
+    statusEl.textContent = 'Adding your wish...';
+
+    try{
+      const list = await loadMessages();
+      list.push({ name, text, ts: Date.now() });
+      const result = await window.storage.set('guestbook:aryan-khan-birthday', JSON.stringify(list), true);
+      if(result){
+        renderMessages(list);
+        form.reset();
+        statusEl.textContent = 'Thank you — your wish has been added!';
+      }else{
+        statusEl.textContent = 'Something went wrong. Please try again.';
+      }
+    }catch(err){
+      statusEl.textContent = 'Something went wrong. Please try again.';
+    }finally{
+      submitBtn.disabled = false;
+      setTimeout(() => statusEl.textContent = '', 3000);
+    }
+  });
 </script>
+
 </body>
 </html>
